@@ -7,8 +7,12 @@ let arr = [
 ];
 
 function PrintStudentswithMap() {
-  //Write your code here , just console.log
-}
+    arr.map(student => {
+      if (student.marks > 50) {
+        console.log(`ID: ${student.id}, Name: ${student.name}, Age: ${student.age}, Marks: ${student.marks}`);
+      }
+    });
+  }
 
 function PrintStudentsbyForEach() {
   //Write your code here , just console.log
